@@ -20,16 +20,14 @@ Yarn（包管理器）
 安装步骤
 
 克隆仓库：
-git clone https://github.com/your-username/weather-forecast-component.git
-cd weather-forecast-component
+git clone https://github.com/zzceaon/weather-forecast-widget.git
+cd weather-forecast-widget
 
 安装依赖：
 yarn
 
 启动开发服务器：
 yarn dev
-
-应用将在 http://localhost:5173 上运行。
 
 配置
 WeatherForecast 组件需要通过 apiHost 和 apiKey 属性传入和风天气 API 的配置。你需要提供自己的和风天气 API 凭据。

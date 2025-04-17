@@ -20,16 +20,14 @@ Yarn (package manager)
 Installation
 
 Clone the repository:
-git clone https://github.com/your-username/weather-forecast-component.git
-cd weather-forecast-component
+git clone https://github.com/zzceaon/weather-forecast-widget.git
+cd weather-forecast-widget
 
 Install dependencies:
 yarn
 
 Run the development server:
 yarn dev
-
-The app will be available at http://localhost:5173.
 
 Configuration
 The WeatherForecast component requires apiHost and apiKey props to interact with the QWeather API. You need to provide your own QWeather API credentials.

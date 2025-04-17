@@ -29,10 +29,14 @@ const WeatherForecast: React.FC<WeatherForecastProps> = ({
     Array<{ name: string; id: string }>
   >([{ name: "上海", id: "101020100" }]);
 
+  const normalizedApiHost = apiHost.startsWith("http")
+    ? apiHost
+    : `https://${apiHost}`;
+
   const fetchLocationId = async (cityName: string) => {
     try {
       const response = await axios.get(
-        `${apiHost}/geo/v2/city/lookup?location=${encodeURIComponent(
+        `${normalizedApiHost}/geo/v2/city/lookup?location=${encodeURIComponent(
           cityName
         )}&key=${apiKey}`
       );
@@ -58,7 +62,7 @@ const WeatherForecast: React.FC<WeatherForecastProps> = ({
     setLoading(true);
     try {
       const response = await axios.get(
-        `${apiHost}/v7/weather/7d?location=${locationId}&key=${apiKey}`
+        `${normalizedApiHost}/v7/weather/7d?location=${locationId}&key=${apiKey}`
       );
       setWeatherData(response.data.daily);
       setError(null);
