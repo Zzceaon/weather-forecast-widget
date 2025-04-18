@@ -74,11 +74,11 @@ yarn preview
 
 ### 白天
 
-![白天](./public/light.png)
+![白天](./public/day.png)
 
 ### 黑夜
 
-![黑夜](./public/dark.png)
+![黑夜](./public/night.png)
 
 ## 贡献
 

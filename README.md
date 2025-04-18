@@ -73,13 +73,13 @@ yarn preview
 
 ## Interface Effect
 
-### Light
+### Day
 
-![Day](./public/light.png)
+![Day](./public/day.png)
 
 ### Night
 
-![Night](./public/dark.png)
+![Night](./public/night.png)
 
 ## License
 
